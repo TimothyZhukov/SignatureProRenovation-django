@@ -1,0 +1,42 @@
+{% load static %}
+<header class="section-header">
+    <nav class="navbar navbar-main navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo_royal.png' %}"
+                    class="logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ml-auto mr-sm-2 mt-2 mt-lg-0">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link active" href="{% url 'home' %}">HOME <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link active" href="{% url 'services' %}">SERVICES</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link active" href="{% url 'about' %}">ABOUT</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link active" href="{% url 'gallery' %}">GALLERY</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link active" href="{% url 'contact' %}">HIRE US</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link active" href="{% url 'contact' %}"><p class="h5 font-weight-bold">(431) 335-8103</p></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <div class="">
+                <p class="font-weight-bold h5">(204) 250-3247</p>
+            </div> -->
+        </div>
+    </nav>
+</header><!-- section-header.// -->
